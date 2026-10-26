@@ -1,0 +1,23 @@
+
+# Dependencies
+node_modules/
+
+# Playwright test artifacts
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Allure generated files
+allure-results/
+allure-report/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Operating system
+.DS_Store
+
+# TypeScript cache
+*.tsbuildinfo
