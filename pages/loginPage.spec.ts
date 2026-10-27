@@ -30,4 +30,19 @@ import type {Page, Locator} from '@playwright/test';
             await this.loginButton.click();
         }   
 
+        async emailNull(
+            password: string): Promise<void> { 
+                await this.usernameInput.fill('');
+                await this.passwordInput.fill(password);
+                await this.loginButton.click();
+        }
+
+        async passwordNull(
+            username: string): Promise<void> { 
+                await this.usernameInput.fill(username);
+                await this.passwordInput.fill('');
+                await this.loginButton.click();     
+            }
+
+
     }
